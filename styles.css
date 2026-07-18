@@ -80,13 +80,12 @@ div.main-nav-div a.current{
 
 ul.top-right-links {
     list-style: none;
-    margin: 0;
-    padding: 0;
     position: absolute;
-    top: 10px;
-    right: 50px;
+    top: 0px;
+    right: 20px;
     display: flex;
-    gap: 25px;
+    gap: 40px;
+    writing-mode: vertical-rl;
 }
 
 ul.top-right-links li {
@@ -103,8 +102,19 @@ ul.top-right-links a:hover {
     opacity: 0.5;
 }
 
-ul.top-right-links a.current{
-    border-bottom: 2px solid black;
+ul.top-right-links a.current {
+    position: relative;
+}
+
+ul.top-right-links a.current::after {
+    content: "•";
+    position: absolute;
+    left: 40%;
+    bottom: -12px;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    line-height: 1;
+    color: #000;
 }
 
 .about-content {
