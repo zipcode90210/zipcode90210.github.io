@@ -54,6 +54,7 @@ ul.main-links-list a {
 
 nav.notebooks-nav ul.main-links-list{
     list-style-type: none;
+    line-height: 1.5;
     margin: 0;
     padding: 0;
     position: absolute;
